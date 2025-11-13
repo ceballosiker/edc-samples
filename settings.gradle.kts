@@ -12,8 +12,6 @@
  *
  */
 
-rootProject.name = "samples"
-
 pluginManagement {
     repositories {
         mavenCentral()
@@ -31,40 +29,4 @@ dependencyResolutionManagement {
 include(":basic:basic-01-basic-connector")
 include(":basic:basic-02-health-endpoint")
 include(":basic:basic-03-configuration")
-
-include(":transfer:transfer-00-prerequisites:connector")
-
-include(":transfer:transfer-04-event-consumer:consumer-with-listener")
-include(":transfer:transfer-04-event-consumer:listener")
-
-include(":transfer:transfer-05-file-transfer-cloud:cloud-transfer-consumer")
-include(":transfer:transfer-05-file-transfer-cloud:cloud-transfer-provider")
-include(":transfer:transfer-05-file-transfer-cloud:transfer-file-cloud")
-
-include(":transfer:transfer-03-consumer-pull:provider-proxy-data-plane")
-
-include(":transfer:transfer-06-kafka-broker:kafka-runtime")
-
-include(":advanced:advanced-01-open-telemetry:open-telemetry-runtime")
-
-//policy
-include(":policy:policy-01-policy-enforcement:policy-enforcement-provider")
-include(":policy:policy-01-policy-enforcement:policy-enforcement-consumer")
-include(":policy:policy-01-policy-enforcement:policy-functions")
-
-// federated catalog
-include(":federated-catalog:fc-00-basic:federated-catalog-base")
-include(":federated-catalog:fc-00-basic:fixed-node-resolver")
-include(":federated-catalog:fc-01-embedded:fc-connector")
-include(":federated-catalog:fc-02-standalone:standalone-fc")
-include(":federated-catalog:fc-03-static-node-directory:target-node-resolver")
-include(":federated-catalog:fc-03-static-node-directory:standalone-fc-with-node-resolver")
-include(":federated-catalog:fc-03-static-node-directory:embedded-fc-with-node-resolver")
-
-
-// modules for code samples ------------------------------------------------------------------------
-include(":advanced:advanced-02-custom-runtime")
-
 include(":util:http-request-logger")
-
-include(":system-tests")
