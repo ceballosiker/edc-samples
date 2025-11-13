@@ -10,7 +10,6 @@
  *  Contributors:
  *       Microsoft Corporation - initial API and implementation
  *       Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - added dependencies
- *       ZF Friedrichshafen AG - add dependency
  *
  */
 
@@ -24,10 +23,8 @@ dependencies {
     implementation(libs.edc.boot)
     implementation(libs.edc.runtime.core)
     implementation(libs.edc.connector.core)
-    
-    implementation(libs.edc.http)
 
-    implementation(libs.edc.configuration.filesystem)
+    implementation(libs.edc.http)
 
     implementation(libs.jakarta.rsApi)
 }
@@ -38,6 +35,6 @@ application {
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     mergeServiceFiles()
-    archiveFileName.set("filesystem-config-connector.jar")
+    archiveFileName.set("acuratio-connector.jar")
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }

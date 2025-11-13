@@ -11,6 +11,8 @@
  *       Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - initial API and implementation
  *
  */
+ 
+rootProject.name = "samples"
 
 pluginManagement {
     repositories {
@@ -26,7 +28,7 @@ dependencyResolutionManagement {
     }
 }
 
-include(":basic:basic-01-basic-connector")
-include(":basic:basic-02-health-endpoint")
-include(":basic:basic-03-configuration")
+include(":acuratio:connector")
+
+// modules for code samples ------------------------------------------------------------------------
 include(":util:http-request-logger")
